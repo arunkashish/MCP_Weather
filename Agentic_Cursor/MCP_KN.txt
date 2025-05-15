@@ -1,0 +1,45 @@
+------------------------------------------------------------------------------------------------------MCP MODEL-----------------------------------------------------Krish Naik----------------------------------
+resource in classmate note  - pRJ1
+
+using UV we are creating basepackage for python,installing langchain for connecting with open source
+
+-> cd /Users/arunkumar/AI_Models/Agentic_Cursor
+-> uv init mcpdemo
+-> uv venv
+-> source .venv/bin/activate
+-> uv add langchain-groq
+-> uv add landchain-openai
+To use MCP we need to use that too
+-> uv add mcp-use 
+
+can connect multilpel, just search for ex: Airbnb mcp server
+If play write fails use the below command
+->  npm install -g @executeautomation/playwright-mcp-server
+
+For getting current time
+-> pip install mcp-simple-timeserver
+
+---------------------------------------Weather-----PJCT2------------------------------------------------------------------------------------------------------------------
+resource git -> https://modelcontextprotocol.io/introduction
+	|_..Pyton-sdk -> https://github.com/modelcontextprotocol/python-sdk	
+	
+API used -> https://api.weather.gov/alerts/active/area/OK
+
+-> cd wheather_MCP
+-> uv venv
+-> source .venv/bin/activate
+-> uv add "mcp[cli]"
+-> uv run mcp dev server/weather.py
+
+For adding to the Claude Desktop use this command
+-> uv run mcp install server/weather.py
+
+mcp-use where u can connect any LLM to any MCP server
+-> uv add mcp-use
+-> uv add langchain-groq
+-> uv run server/client.py
+
+path for Claude -> '/Users/arunkumar/Library/Application Support/Claude/claude_desktop_config.json'
+To make claude work use install and uninstall cmd
+npx -y @smithery/cli install mcp-simple-timeserver --client claude --key 5f1235ca-a4d0-48af-a034-3bc05a207303
+npx -y @smithery/cli uninstall mcp-simple-timeserver --client claude --key 5f1235ca-a4d0-48af-a034-3bc05a207303
