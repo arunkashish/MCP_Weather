@@ -43,3 +43,5 @@ path for Claude -> '/Users/arunkumar/Library/Application Support/Claude/claude_d
 To make claude work use install and uninstall cmd
 npx -y @smithery/cli install mcp-simple-timeserver --client claude --key 5f1235ca-a4d0-48af-a034-3bc05a207303
 npx -y @smithery/cli uninstall mcp-simple-timeserver --client claude --key 5f1235ca-a4d0-48af-a034-3bc05a207303
+
+adding new
