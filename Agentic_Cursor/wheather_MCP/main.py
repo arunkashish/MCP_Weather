@@ -1,8 +1,8 @@
 def main():
     print("Hello from wheather-mcp!")
 
-if(a==1):
-    d=a+c
+if(b==1):
+    b=a+c
 
 
 if __name__ == "__main__":
