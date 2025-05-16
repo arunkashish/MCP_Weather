@@ -7,6 +7,9 @@ if(b==1):
 if(g==1):
     h=b+c
 
+if(j==1):
+    t=b+c
+
 
 if __name__ == "__main__":
     main()
