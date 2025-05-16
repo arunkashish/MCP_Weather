@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+      "weather": {
+        "command": "uv",
+        "args": [
+          "run",
+          "--with",
+          "mcp[cli]",
+          "mcp",
+          "run",
+          "/Users/arunkumar/AI_Models/Agentic_Cursor/wheather_MCP/server/weather.py"
+        ]
+      },
+      "duckduckgo-search": {
+        "command": "npx",
+        "args": ["duckduckgo-mcp-server"]
+      },
+     "MCP-timeserver": {
+      "command": "uvx",
+      "args": [
+        "MCP-timeserver"
+      ]
+    }
+    }
+  }

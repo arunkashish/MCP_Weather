@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/arunkumar/Desktop",
+        "/Users/arunkumar/Downloads"
+      ]
+    },
+    "weather": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/Users/arunkumar/AI_Models/Agentic_Cursor/wheather_MCP/server/weather.py"
+      ]
+    },
+    "simple-timeserver": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_simple_timeserver"
+      ]
+    },
+    "mcp-simple-timeserver": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "mcp-simple-timeserver",
+        "--key",
+        "5f1235ca-a4d0-48af-a034-3bc05a207303"
+      ]
+    }
+  }
+}
